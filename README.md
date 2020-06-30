@@ -8,11 +8,13 @@
     - 取消暂存 `git restore --staged <file>`
   - 提交到本地仓库 `git commit -m <message>`
 
-### 查看
+### 基本
 - 查看状态 `git status`
 - 查看历史版本 `git log --pretty=oneline `
+  - 分支合并图 `git log --graph`
 - 操作记录 `git reflog`
 - 查看工作区和版本库different `git diff HEAD -- <file>`
+
 
 ### 版本管理
 - 版本回退 `git reset --hard <commit_id>` 
@@ -39,3 +41,16 @@
 - 从远程克隆项目 `git clone <respository address>`
 
 ### 分支管理
+
+- 创建分支 `git branch <分支名>`
+- 切换分支 `git switch/checkout <分支名>`
+- 查看分支 `git branch`
+- 在当前分支合并其他分支 `git merge <其他分支名>`
+- 删除分支 `git branch -d <分支名>`
+
+> 创建并切换分支 `git checkout -b <分支名>`
+> 或者 `git switch -c <分支名>` // 推荐
+
+> 我们注意到切换分支使用 `git checkout <分支名>`，而删除工作区的修改则是 `git checkout -- <file>`，同一个命令，有两种作用，确实有点令人迷惑。因此我们推荐使用 `switch` 来做切换分支管理
+
+> 注意合并分支时的冲突问题
