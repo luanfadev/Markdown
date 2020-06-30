@@ -4,7 +4,7 @@
 
 - 初始化  `git init`
 - 把文件添加到版本库
-  - 添加到暂存区(staged) `git add <file>`
+  - 添加/删除状态同步到暂存区(staged) `git add/rm <file>`
     - 取消暂存 `git restore --staged <file>`
   - 提交到本地仓库 `git commit -m <message>`
 
@@ -19,7 +19,16 @@
 - 版本回退 `git reset --hard <commit_id>` 
   - `HEAD^`表示回退N(N个^)个版本
   - `8e1ee3797...` 具体版本号
-    - 具体版本号的查询方式可以通过`git log`或者`git reflog`
+    - 具体版本号的查询方式可以通过`git log`或者`git reflog`查询
 - 放弃修改
   - 从暂存区回退到工作区 `git reset HEAD <file>`
   - 删除工作区的修改 `git checkout -- <file>`
+
+> ##### 问题  
+> 从暂存区回退到工作区和取消暂存不是一样的吗?  
+>> 取消暂存 `git restore --staged <file>`  
+>> 从暂存区回退到工作区 `git reset HEAD <file>`
+
+### 远程仓库 GitHub 
+- 用户主目录<kbd>.ssh</kbd> 文件夹下,复制 <kbd>id_rsa.pub</kbd>里的内容到 <kbd>GitHub下SSH and GPG keys</kbd> `new SSH key`
+- 
