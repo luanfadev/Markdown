@@ -8,7 +8,6 @@
     - 取消暂存 `git restore --staged <file>`
   - 提交到本地仓库 `git commit -m <message>`
 
-
 ### 查看
 - 查看状态 `git status`
 - 查看历史版本 `git log --pretty=oneline `
@@ -31,4 +30,12 @@
 
 ### 远程仓库 GitHub 
 - 用户主目录<kbd>.ssh</kbd> 文件夹下,复制 <kbd>id_rsa.pub</kbd>里的内容到 <kbd>GitHub下SSH and GPG keys</kbd> `new SSH key`
-- 
+- 提交到/删除 远程仓库
+  - `git add .`
+  - `git commit -m ''`
+  - `git remote add/remove orgin <respository address>`
+  - `git pull` // 如有必要, 我一般不用这一步
+  - `git push -u -f origin master` // 第一次使用<kbd>-f</kbd>强制提交
+- 从远程克隆项目 `git clone <respository address>`
+
+### 分支管理
