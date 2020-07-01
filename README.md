@@ -48,7 +48,7 @@
 - 删除分支 `git branch -d <分支名>`
 
 > 创建并切换分支 `git checkout -b <分支名>`
-> 或者 `git switch -c <分支名>` // 推荐
+> 或者 `git switch -c <分支名>` // 推荐!!!
 
 > 我们注意到切换分支使用 `git checkout <分支名>`，而删除工作区的修改则是 `git checkout -- <file>`，同一个命令，有两种作用，确实有点令人迷惑。因此我们推荐使用 `switch` 来做切换分支管理
 
