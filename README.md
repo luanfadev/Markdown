@@ -8,13 +8,12 @@
     - 取消暂存 `git restore --staged <file>`
   - 提交到本地仓库 `git commit -m <message>`
 
-### 基本
+### 查看
 - 查看状态 `git status`
 - 查看历史版本 `git log --pretty=oneline `
-  - 分支合并图 `git log --graph`
+  - 查看分支历史 `git log --graph --pretty=oneline --abbrev-commit`
 - 操作记录 `git reflog`
 - 查看工作区和版本库different `git diff HEAD -- <file>`
-
 
 ### 版本管理
 - 版本回退 `git reset --hard <commit_id>` 
@@ -45,7 +44,7 @@
 - 创建分支 `git branch <分支名>`
 - 切换分支 `git switch/checkout <分支名>`
 - 查看分支 `git branch`
-- 在当前分支合并其他分支 `git merge <其他分支名>`
+- 合并分支 `git merge --no-ff -m '说明' <其他分支>`
 - 删除分支 `git branch -d <分支名>`
 
 > 创建并切换分支 `git checkout -b <分支名>`
