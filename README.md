@@ -11,6 +11,7 @@
 ### 查看
 - 查看状态 `git status`
 - 查看历史版本 `git log --pretty=oneline `
+  - 查看分支历史 `git log --graph --pretty=oneline --abbrev-commit`
 - 操作记录 `git reflog`
 - 查看工作区和版本库different `git diff HEAD -- <file>`
 
