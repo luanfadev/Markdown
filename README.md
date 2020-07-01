@@ -11,6 +11,7 @@
 ### 查看
 - 查看状态 `git status`
 - 查看历史版本 `git log --pretty=oneline `
+  - 查看分支历史 `git log --graph --pretty=oneline --abbrev-commit`
 - 操作记录 `git reflog`
 - 查看工作区和版本库different `git diff HEAD -- <file>`
 
@@ -34,8 +35,31 @@
   - `git add .`
   - `git commit -m ''`
   - `git remote add/remove orgin <respository address>`
-  - `git pull` // 如有必要, 我一般不用这一步
+  - `git pull` // 如有必要
   - `git push -u -f origin master` // 第一次使用<kbd>-f</kbd>强制提交
 - 从远程克隆项目 `git clone <respository address>`
 
 ### 分支管理
+
+- 创建分支 `git branch <分支名>`
+- 切换分支 `git switch/checkout <分支名>`
+- 查看分支 `git branch`
+- 合并分支 `git merge --no-ff -m '说明' <其他分支>`
+- 删除分支 `git branch -d <分支名>`
+
+> 创建并切换分支 `git checkout -b <分支名>`
+> 或者 `git switch -c <分支名>` // 推荐
+
+> 我们注意到切换分支使用 `git checkout <分支名>`，而删除工作区的修改则是 `git checkout -- <file>`，同一个命令，有两种作用，确实有点令人迷惑。因此我们推荐使用 `switch` 来做切换分支管理
+
+> 注意合并分支时的冲突问题
+
+
+### Bug分支
+
+ - `git stash`
+ - `git stash list`
+ - 恢复 `git stash apply <stash@{0}>`
+ - 删除/丢弃stash `git stash drop`
+
+> 一步到位,恢复+删除stash `git stash pop`
