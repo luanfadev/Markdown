@@ -74,3 +74,7 @@
 - 命令git tag -d <tagname>可以删除一个本地标签；
 
 - 命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+
+### 配置文件
+
+<kbd>.gitignore</kbd>
