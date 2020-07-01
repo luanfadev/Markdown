@@ -35,7 +35,7 @@
   - `git add .`
   - `git commit -m ''`
   - `git remote add/remove orgin <respository address>`
-  - `git pull` // 如有必要, 我一般不用这一步
+  - `git pull` // 如有必要
   - `git push -u -f origin master` // 第一次使用<kbd>-f</kbd>强制提交
 - 从远程克隆项目 `git clone <respository address>`
 
@@ -58,4 +58,8 @@
 ### Bug分支
 
  - `git stash`
- - 
+ - `git stash list`
+ - 恢复 `git stash apply <stash@{0}>`
+ - 删除/丢弃stash `git stash drop`
+
+> 一步到位,恢复+删除stash `git stash pop`
