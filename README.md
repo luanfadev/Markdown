@@ -63,3 +63,14 @@
  - 删除/丢弃stash `git stash drop`
 
 > 一步到位,恢复+删除stash `git stash pop`
+
+### tag
+
+- `git tag`
+- 命令git push origin <tagname>可以推送一个本地标签；
+
+- 命令git push origin --tags可以推送全部未推送过的本地标签；
+
+- 命令git tag -d <tagname>可以删除一个本地标签；
+
+- 命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
