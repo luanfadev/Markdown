@@ -36,7 +36,7 @@
   - `git commit -m ''`
   - `git remote add/remove orgin <respository address>`
   - `git pull` // 如有必要
-  - `git push -u -f origin master` // 第一次使用<kbd>-f</kbd>强制提交
+  - 推送到远程分支 `git push -u -f origin <本地分支名>` // 第一次使用<kbd>-f</kbd>强制提交
 - 从远程克隆项目 `git clone <respository address>`
 
 ### 分支管理
@@ -55,7 +55,7 @@
 > 注意合并分支时的冲突问题
 
 
-### Bug分支
+### Bug分支,备份现场并恢复现场
 
  - `git stash`
  - `git stash list`
