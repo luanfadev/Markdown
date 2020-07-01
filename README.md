@@ -43,7 +43,7 @@
 - 创建分支 `git branch <分支名>`
 - 切换分支 `git switch/checkout <分支名>`
 - 查看分支 `git branch`
-- 在当前分支合并其他分支 `git merge <其他分支名>`
+- 合并分支 `git merge --no-ff -m '说明' <其他分支>`
 - 删除分支 `git branch -d <分支名>`
 
 > 创建并切换分支 `git checkout -b <分支名>`
