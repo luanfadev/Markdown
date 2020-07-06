@@ -30,7 +30,7 @@
 >> 从暂存区回退到工作区 `git reset HEAD <file>`
 
 ### 远程仓库 GitHub 
-- 用户主目录<kbd>.ssh</kbd> 文件夹下,复制 <kbd>id_rsa.pub</kbd>里的内容到 <kbd>GitHub下SSH and GPG keys</kbd> `new SSH key`
+- 用户主目录<kbd>.ssh</kbd> 文件夹下[若无<kbd>id_rsa.pub</kbd>,执行`ssh-keygen -t rsa -C "youremail@example.com"`],复制 <kbd>id_rsa.pub</kbd>里的内容到 <kbd>GitHub下SSH and GPG keys</kbd> `new SSH key`
 - 提交到/删除 远程仓库
   - `git add .`
   - `git commit -m ''`
